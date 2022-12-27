@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container div{
+            background-color: lightskyblue;
+            height: 250px;
+            width: 350px;
+            margin: 15px 50px;
+            border-radius: 40px;
+            
+        }
+        li{
+            list-style: none;
+            line-height: 45px;
+            font-size: 2rem;
+            margin: 10px 30px;
+            font-weight: bold;
+        }
+        button{
+            padding: 14px;
+            border-radius: 15px;
+            width: 110px;
+            margin: 5px 20px;
+            background-color: lightcoral;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">    
+    <div>
+        <ul>
+            <li>Hello 1</li>
+            <li>World 1</li>
+            <li>Day 1</li>
+        </ul>
+        <button id="btn11">Click</button>
+        <button id="btn22">Remove</button>
+    </div>
+    </div>
+    <script>
+     let btn1 = document.getElementById("btn11")
+     let btn2 = document.getElementById("btn22")
+     let ul = document.querySelector("ul")
+     btn1.addEventListener("click", ()=>{
+        ul.style.display = "block"
+
+     })
+     btn2.addEventListener("click", ()=>{
+        ul.style.display = "none"
+
+     })
+    </script>
+</body>
+</html>
